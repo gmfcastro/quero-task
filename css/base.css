@@ -1,0 +1,107 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+}
+
+ul, nav, li, a, h1{
+    padding: 0;
+    margin: 0; 
+}
+
+h1{
+    font-size: 20px;
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
+.bold{
+    font-weight: 600;  
+    color: #666; 
+}
+
+.light{
+    font-weight: 600;
+    color: #bbb;    
+}
+
+body{
+    margin: 0;
+}
+
+.container{
+    margin: 0 30px 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-full{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar{
+    border-radius: 50%;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    padding: .5em .8em;
+    margin: .5em;
+    border: 1px solid #0bf;
+    background-color: white;
+    border-radius: 3px;
+    color: #0bf;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.btn-action{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #bbb;
+    border-radius: 50%;
+}
+
+.btn-action:focus{
+    outline: none;
+}
+
+.btn-close{
+    font-size: 15px;
+    color: #bbb;
+    background-color: inherit;
+    border: none;
+    margin: 0 5px 5px 5px;
+}
+
+.btn-close:focus{
+    outline: none;
+}

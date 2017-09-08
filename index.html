@@ -46,6 +46,7 @@
                     <div>
                         <button class="btn btn-add-task bold" onclick="vm.openTaskDetail()">Add Task</button>
                     </div>
+                    <img class="icon icon-settings" src="images/icons/icon-settings.png" alt="Open Settings">
                 </div>
                 <div class="task-list-body"></div>
             </section>
@@ -58,12 +59,12 @@
                              <span class="bold">Guilherme Freitas</span>
                         </div>
                         <div class="task-detail-header-actions row">
-                            <a class="btn-action" href="#"></a>
+                            <a class="btn-action-dotted icon-action icon-due-date" href="#"></a>
                             <span class="bold">Due Date</span>
-                            <a class="btn-action" href="#"></a>
-                            <a class="btn-action" href="#"></a>
-                            <a class="btn-action" href="#"></a>
-                            <a class="btn-action" href="#"></a>
+                            <a class="btn-action icon-action icon-heart" href="#"></a>
+                            <a class="btn-action icon-action icon-subtask" href="#"></a>
+                            <a class="btn-action icon-action icon-attach" href="#"></a>
+                            <a class="btn-action icon-action icon-more" href="#"></a>
                         </div>
                         <div class="task-detail-header-close">
                             <button class="btn-close" onclick="vm.closeTaskDetail()">X</button>
@@ -72,8 +73,10 @@
                 <div class="task-detail-body row">
                     <form onsubmit="vm.submitTask(event)">
                         <input name="task.id" type="text" hidden/>
-                        <input class="input-task-title" name="task.title" type="text" placeholder="New Task"/>
-                        <textarea class="input-task-description" name="task.description" placeholder="Description" cols="30" rows="20"></textarea>
+                        <div class="input-with-img">
+                            <input class="input-task-title" name="task.title" type="text" placeholder="New Task" onblur="vm.submitTask(event)"/>
+                        </div>
+                        <textarea class="input-task-description" name="task.description" placeholder="Description" cols="30" rows="20" onblur="vm.submitTask(event)"></textarea>
                         <input type="submit" hidden/>
                     </form>     
                 </div>

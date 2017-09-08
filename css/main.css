@@ -88,6 +88,7 @@ header{
     margin: 1em;
     height: 700px;
     max-width: 70%;
+    overflow: scroll;
 }
 
 .task-list-header{
@@ -97,12 +98,20 @@ header{
 
 .task-list-header .btn-add-task{
     margin-left: 1.5em;
+    cursor: pointer;
 }
 
 .task-item-list{
     padding: 1em .2em;
     cursor: pointer;
     border-bottom: 1px solid #eee;
+    background-image: url(../images/icons/icon-checked.svg);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position-x: 10px; 
+    background-position-y: 5px; 
+    padding-left: 60px;
+    opacity: 0.6;
 }
 
 .task-selected{
@@ -129,7 +138,10 @@ header{
 
 .task-detail-header-actions a{
     margin-left: .8em;
-    margin-right: .2em;
+}
+
+.task-detail-header-actions span{
+    margin-left: 1em;
 }
 
 .task-detail{
@@ -193,6 +205,40 @@ header{
     margin: 0 1em 0 1em;
     width: 85%;
     resize: none;
+}
+
+.input-with-img input{
+    background-image: url(../images/icons/icon-checked.svg);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    padding-left: 40px;
+    opacity: 0.6;
+}
+
+.icon-action{
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-due-date{
+    background-image: url(../images/icons/icon-duedate.png);
+}
+
+.icon-heart{
+    background-image: url(../images/icons/icon-heart.png);
+}
+
+.icon-subtask{
+    background-image: url(../images/icons/icon-subtask.png);
+}
+
+.icon-attach{
+    background-image: url(../images/icons/icon-attach.png);
+}
+
+.icon-more{
+    background-image: url(../images/icons/icon-more.png);
 }
 
 

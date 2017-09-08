@@ -11,7 +11,6 @@ class TasksView extends View{
             
             <ul>
                 <li class="task-item-list" onclick="vm.selectTask(event,${n.id})">
-                    <i class="i-check"></i>
                     <span>${n.title}</span>
                     <input name="task.name" class="task1" type="text" placeholder="Add task" hidden />
                 </li>

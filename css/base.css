@@ -94,6 +94,19 @@ body{
     outline: none;
 }
 
+.btn-action-dotted{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px dashed #bbb;
+    border-radius: 50%;
+}
+
+.btn-action-dotted:focus{
+    outline: none;
+}
+
+
 .btn-close{
     font-size: 15px;
     color: #bbb;
@@ -104,4 +117,10 @@ body{
 
 .btn-close:focus{
     outline: none;
+}
+
+.icon{
+    width: 20px;
+    margin: 0 10px;
+    cursor: pointer;
 }
